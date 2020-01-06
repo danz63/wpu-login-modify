@@ -281,8 +281,8 @@ class Auth extends CI_Controller
         $config = [
             'protocol' => 'smtp',
             'smtp_host' => 'ssl://smtp.googlemail.com',
-            'smtp_user' => 'muhammad.danni63@gmail.com',
-            'smtp_pass' => 'mochdani63',
+            'smtp_user' => '',
+            'smtp_pass' => '',
             'smtp_port' => 465,
             'mailtype' => 'html',
             'charset' => 'utf-8',
@@ -292,7 +292,7 @@ class Auth extends CI_Controller
         $this->load->library('email');
         $this->email->initialize($config);
 
-        $this->email->from('muhammad.danni63@gmail.com', 'Muhammad Miftah Hamdani');
+        $this->email->from('', '');
         $this->email->to($this->input->post('email'));
         if ($type == 'verify') {
             $message = 'To activate your account, please <a href="' . base_url() . 'auth/verify?email=' . $this->input->post('email') . '&token=' . urlencode($token) . '">click here</a>';
