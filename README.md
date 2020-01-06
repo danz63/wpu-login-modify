@@ -10,6 +10,8 @@ How To Config?
 	- Edit application/config/database.php ganti username, password dan database_name sesuai dengan mesin anda
 	- Edit application/controllers/Auth.php method _sendEmail()
 
+link platlist https://www.youtube.com/playlist?list=PLFIM0718LjIXU8ul9FiN-owk04cQKtHPw
+
 Thanks
 #happy_ngoding
 #jangan_lupa_titik_koma
